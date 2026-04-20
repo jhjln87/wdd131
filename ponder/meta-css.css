@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+#content {
+    display: block;
+    width:700px;
+    text-align: center;
+    background-color: lightgray;
+    outline: solid 1px rgb(184, 184, 184);
+    outline-offset: -20px;
+    padding: 50px 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#content img {
+    width:45%;
+}
+ul {
+    list-style: none;
+}
+#sub {
+    color:rgb(41, 107, 169);
+    font-size: 1.2em;
+}
+hr {
+  border: none; 
+  border-top: 3px solid rgb(41, 107, 169);
+  width:70%;
+  margin-bottom: 15px;
+}
+#topics {
+    width: 55%;
+    margin: 0 auto;
+}
+#topics li {
+    text-align: left;
+}
