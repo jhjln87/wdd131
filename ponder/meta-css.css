@@ -6,7 +6,7 @@ body {
     display: block;
     width:700px;
     text-align: center;
-    background-color: lightgray;
+    background-color: rgb(219, 219, 219);
     outline: solid 1px rgb(184, 184, 184);
     outline-offset: -20px;
     padding: 50px 20px;
