@@ -4,7 +4,8 @@ body {
 }
 #content {
     display: block;
-    width:700px;
+    width:60%;
+    max-width:700px;
     text-align: center;
     background-color: rgb(219, 219, 219);
     outline: solid 1px rgb(184, 184, 184);
@@ -20,7 +21,7 @@ ul {
 }
 #sub {
     color:rgb(41, 107, 169);
-    font-size: 1.2em;
+    font-size: clamp(10px, 1.2vw, 1.2em);
 }
 hr {
   border: none; 
@@ -32,6 +33,10 @@ hr {
     width: 55%;
     margin: 0 auto;
 }
+#topics h2 {
+    font-size: clamp(15px, 1.58vw, 5em);
+}
 #topics li {
     text-align: left;
+    font-size: clamp(10px, 1vw, 1.2em);
 }
