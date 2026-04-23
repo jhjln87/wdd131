@@ -1,0 +1,37 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    border: solid gray 1px;
+    margin: 10px 27.5%;
+    padding: 42px 7.8%;
+    line-height: 23px;
+    text-align: center;
+}
+h1, h2 {
+    text-transform: uppercase;
+    font-family: serif;
+    letter-spacing: 2px;
+}
+h1 {
+    font-weight: 500;
+    font-size: 2vw;
+}
+h2 {
+    font-size: 80%;
+    color: #006EB6;
+}
+hr {
+    margin-top:-14px;
+    opacity: 35%;
+    margin-bottom: 35px;
+}
+p, ol {
+    text-align: left;
+    font-size: 0.95vw;
+}
+li {
+    margin-bottom: 12.25px;
+}
+img {
+    margin-top: 30px;
+    width: 25%;
+}
