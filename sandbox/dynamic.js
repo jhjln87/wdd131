@@ -30,3 +30,19 @@ student.forEach(function(item) {
     container.appendChild(name);
 
 })
+
+//literal array
+const pets = ['cat', 'dog', 'bird'];
+
+//constructor array
+const animals = new Array('pig', 'goat', 'sheep');
+
+pets.push('lizard');
+
+pets.unshift('snake');
+
+pets[3] = 'bunny';
+
+pets.pop();
+
+pets.shift();
