@@ -54,7 +54,7 @@ articles.forEach(item=> {
     </div>
     <div class="bio">
         <h2>${item.title}</h2>
-        <img src="${item.imgSrc}" alt=${item.imgAlt}>
+        <img src="${item.imgSrc}" alt="${item.imgAlt}">
         <p>${item.description}</p>
     </div>
     `;
