@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sign up page for the event tickets">
+    <meta name="author" content="John Wendt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Tickets</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <main id="wrapper">
+        <form id="ticket-form" aria-labelledby="form-title" novalidate>
+            <h2 id="form-title">Event Ticket</h2>
+            
+            <fieldset style="border: none; padding: 0; margin: 0;">
+                <legend class="sr-only">Ticket Holder Information</legend>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input 
+                            type="text" 
+                            id="first-name" 
+                            name="firstName" 
+                            required 
+                            aria-required="true"
+                            autocomplete="given-name"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input 
+                            type="text" 
+                            id="last-name" 
+                            name="lastName" 
+                            required 
+                            aria-required="true"
+                            autocomplete="family-name"
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="example@gmail.com"
+                        required 
+                        aria-required="true"
+                        autocomplete="email"
+                        aria-describedby="email-hint"
+                    >
+                    <span id="email-hint" class="sr-only">Format: name@example.com</span>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="ticket-type">Ticket Type</label>
+                        <select 
+                            id="ticket-type" 
+                            name="ticketType" 
+                            required 
+                            aria-required="true"
+                        >
+                            <option value="" disabled selected>Choose one...</option>
+                            <option value="student">Student</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Event Date</label>
+                        <input 
+                            type="date" 
+                            id="event-date" 
+                            name="eventDate" 
+                            required 
+                            aria-required="true"
+                        >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group full-width">
+                        <label for="type-fr"></label>
+                        <input
+                            type="text"
+                            id="type-fr"
+                            name="typeFreeResponse"
+                            required
+                            aria-required="true"
+                        >
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="submit-btn">Create Ticket</button>
+            <div id="output" aria-live="polite"></div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,134 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bcceda;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#wrapper {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ticket-form h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: #000000;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #000000;
+}
+
+.form-group input,
+.form-group select {
+    font-size: 1rem;
+    padding: 10px 12px;
+    border: 1px solid #767676;
+    border-radius: 4px;
+    background-color: #ffffff;
+    height: 42px;
+    color: #000000;
+    outline: none;
+    width: 100%;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #bcceda;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #a7b9c7;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.form-group label span {
+    color: #d93025; 
+    margin-left: 2px;
+}
+
+#output {
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: all 0.05s ease;
+}
+
+.error-box {
+    padding: 15px;
+    background-color: #fde8e8;
+    color: #d93025;
+    border: 1px solid #d93025;
+}
+
+@media (min-width: 550px) {
+    #wrapper {
+        padding: 40px;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .form-group {
+        flex: 1;
+    }
+}

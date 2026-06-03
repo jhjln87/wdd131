@@ -48,39 +48,39 @@ form.addEventListener("submit", function (event) {
     const selectedCampuses = getSelectedCampuses();
     const note = form.notes.value.trim();
 
-if (selectedCampuses.length == 0) {
-    output.textContent = 'Please choose at least one campus';
-    return;
-}
-
-// if (type == 'one' && selectedCampuses.length > 1) {
-//     output.textContent = 'Please select only one campus, or select the multiple campus option';
-//     return;
-// }
-
-if (type == 'many' && !notes) {
-    output.textContent = 'Please add notes on how you will travel between campuses';
-    return;
-}
-
-if (type == 'many' && selectedCampuses.length < 2) {
-    output.textContent = 'Please choose at least two campuses';
-    return;
-}
-
-if (isPastDate(availableDate)) {
-    output.textContent = "Please choose a later date.";
-    return;
-}
-
-output.innerHTML = `
-    <h2>Preference Submitted</h2>
-    <p>${firstName} ${lastName}</p>
-    <p>Email: ${email}</p>
-    <p>Availability: ${availableDate}</p>
-    <p>Campuses: ${selectedCampuses.join(", ")}</p>
-    <p>Preference Level: ${type}</p>
-`;
-form.reset();
-updateNotesField();
+    if (selectedCampuses.length == 0) {
+        output.textContent = 'Please choose at least one campus';
+        return;
+    }
+    
+    // if (type == 'one' && selectedCampuses.length > 1) {
+    //     output.textContent = 'Please select only one campus, or select the multiple campus option';
+    //     return;
+    // }
+    
+    if (type == 'many' && !notes) {
+        output.textContent = 'Please add notes on how you will travel between campuses';
+        return;
+    }
+    
+    if (type == 'many' && selectedCampuses.length < 2) {
+        output.textContent = 'Please choose at least two campuses';
+        return;
+    }
+    
+    if (isPastDate(availableDate)) {
+        output.textContent = "Please choose a later date.";
+        return;
+    }
+    
+    output.innerHTML = `
+        <h2>Preference Submitted</h2>
+        <p>${firstName} ${lastName}</p>
+        <p>Email: ${email}</p>
+        <p>Availability: ${availableDate}</p>
+        <p>Campuses: ${selectedCampuses.join(", ")}</p>
+        <p>Preference Level: ${type}</p>
+    `;
+    form.reset();
+    updateNotesField();
 });
