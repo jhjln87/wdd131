@@ -5,6 +5,8 @@ const email = document.querySelector("#email");
 const ticketType = document.querySelector("#ticket-type");
 const date = document.querySelector("#event-date");
 const formExtra = document.querySelector("#type-fr");
+const extraParent = document.querySelector("#toggle");
+const label = document.querySelector("#toggle label")
 const output = document.querySelector("#output");
 
 function isPastDate(value) {
@@ -13,6 +15,22 @@ function isPastDate(value) {
     const chosen = new Date(value);
     return chosen < today;
 }
+
+ticketType.addEventListener('change', function(event) {
+    const dType = ticketType.value;
+    extraParent.classList.add('show');
+    if (dType == "student") {
+        label.innerHTML = `
+        Student I-number
+        `
+    }
+    if (dType == "guest") {
+        label.innerHTML = `
+        Access code
+        `
+    }
+
+})
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -61,9 +79,10 @@ form.addEventListener("submit", function (event) {
         return;
     }
 
-    
+    output.classList.add('success-box');
+
     output.innerHTML = `
-        <h2>Ticket Created</h2>
+        <h2 style="color:#0c4b21;">Ticket Created</h2>
         <p>${sFirstName} ${sLastName}</p>
         <p>${sType}</p>
         <p>${sDate}</p>

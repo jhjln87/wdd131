@@ -118,6 +118,19 @@ fieldset {
     color: #d93025;
     border: 1px solid #d93025;
 }
+.success-box {
+    padding: 15px;
+    background-color: #e6f4ea;
+    color: #137333;
+    border: 1px solid #137333;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: unset;
+}
 
 @media (min-width: 550px) {
     #wrapper {
