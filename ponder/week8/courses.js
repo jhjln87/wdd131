@@ -1,7 +1,7 @@
 const aCourse = {
   code: 'CSE121b',
   name: 'Javascript Language',
-  logo: 'images/js-logo.png',
+  logo: 'JavaScript-logo.png',
   sections: [
     { sectionNum: 1, roomNum: 'STC 215', enrolled: 37, days: 'MW', instructor: 'Bro A'},
     { sectionNum: 2, roomNum: 'ROM 128', enrolled: 27, days: 'M-F', instructor: 'Bro C'},
@@ -22,6 +22,12 @@ const aCourse = {
     }
   }
 };
+
+document.querySelector('#courseName').textContent = aCourse.name;
+document.querySelector('#courseCode').textContent = aCourse.code;
+document.querySelector('img').src = aCourse.logo;
+document.querySelector('img').alt = aCourse.name;
+document.querySelector('img').style.width = '100px';
 
 function sectionTemplate(section) {
     return `<tr>
