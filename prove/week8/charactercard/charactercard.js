@@ -8,9 +8,9 @@ let attack = document.querySelector('#attack-btn');
 let levelUp = document.querySelector('#level-btn');
 document.querySelector("#char-class").innerHTML = snortleblat.class;
 let health = document.querySelector('#char-health');
-health.innerHTML = snortleblat.level;
+health.innerHTML = snortleblat.health;
 let level = document.querySelector('#char-level');
-level.innerHTML = snortleblat.health;
+level.innerHTML = snortleblat.level;
 
 attack.addEventListener("click", () => {
     if (snortleblat.health <= 0) {
