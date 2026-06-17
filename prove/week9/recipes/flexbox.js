@@ -15,7 +15,7 @@ let starElements = document.querySelectorAll(".star");
 let recipesRating = document.getElementById("recipes-rating");
 recipesRating.ariaLabel = `Rating: ${stars} out of 5 stars`;
 
-for (let i = 0; i <= starElements.length; i++) {
+for (let i = 0; i < starElements.length; i++) {
     if (stars > i) {
         starElements[i].innerHTML = "★";
         starElements[i].classList.add("icon-star");
