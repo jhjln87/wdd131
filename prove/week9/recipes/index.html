@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RecipeBook">
+    <meta property="og:description" content="A page with all the recipes">
+    <meta property="og:url" content="jhjln87.github.io/wdd131/prove/week9/recipes">
+    <meta property="og:image" content="openGraph.webp">
+    
+    <!-- X Card -->
+    <meta name="twitter:card" content="Social Preview Image">
+    <meta name="twitter:title" content="RecipeBook">
+    <meta name="twitter:description" content="A page with all the recipes">
+    <meta name="twitter:image" content="twitter.webp">
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="iphone.webp">
+
+    <title>RecipeBook</title>
+    <link rel="stylesheet" href="flexbox.css">
+    <script src="flexbox.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="iphone.webp" alt="Recipe Book Logo" class="logo">
+            <h1>RecipeBook</h1>
+        </div>
+        
+        <form id="search-form" action="#" method="get">
+            <label id="search-label" class="sr-only">Search Recipes</label>
+            <div class="search-container">
+                <input type="search" id="search-input" placeholder="Find a Recipe" aria-label="Search recipes">
+                <button type="submit" id="search-button">
+                    <img src="search (1).webp" alt="🔍" aria-label="search button">
+                </button>
+            </div>
+        </form>
+        <hr>
+    </header>
+
+    <main>
+        <section id="recipes-container">
+            <img id="recipes-image">
+            <h4 id="recipes-type"></h4>
+            <h1 id="recipes-title"></h1>
+            <span
+                id="recipes-rating"
+                role="img"
+            >
+                <span aria-hidden="true" class="star"></span>
+                <span aria-hidden="true" class="star"></span>
+                <span aria-hidden="true" class="star"></span>
+                <span aria-hidden="true" class="star"></span>
+                <span aria-hidden="true" class="star"></span>
+            </span>
+            <p id="recipes-description"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="Screenshot 2026-06-16 172559.webp" alt="instagram icon"></a>
+            <a href="#"><img src="Screenshot 2026-06-16 172725.webp" alt="youtube icon"></a>
+            <a href="#"><img src="Screenshot 2026-06-16 172750.webp" alt="pinterest icon"></a>
+        </div>                  
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>                   
+    </footer>
+</body>
+</html>
