@@ -9,7 +9,7 @@ recipesType.innerHTML = `dessert`;
 recipesTitle.innerHTML = `Apple Crisp`;
 recipesDescription.innerHTML = `This apple crisp recipe is a simple yet delicious fall desert that's great served with warm vanilla ice cream.`;
 
-let stars = 4;
+let stars = 3;
 let starElements = document.querySelectorAll(".star");
 
 let recipesRating = document.getElementById("recipes-rating");
