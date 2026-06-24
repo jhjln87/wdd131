@@ -96,8 +96,8 @@ function search() {
     }
     return 0;
     }
-    console.log(sortedHikes);
-
+    
+    hikeContainer.innerHTML = "";
     sortedHikes.forEach(function(hike){
         renderHike(hike);
     })
