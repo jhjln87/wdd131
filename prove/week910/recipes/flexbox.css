@@ -94,7 +94,8 @@ header hr {
 }
 
 
-#recipes-container {
+.recipes-container {
+    margin-bottom: 20px;
     width: 400px;
     border: 2px solid black;
     border-radius: 6px;
@@ -105,29 +106,38 @@ header hr {
     align-items: flex-start;
 }
 
-#recipes-container img {
+.recipes-container img {
     width: 100%;
 }
 
-#recipes-container h4, #recipes-container h1 {
+.recipes-container h4, .recipes-container h1 {
     margin: 5px 0px 5px 0px;
 }
 
-#recipes-container h4 {
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.recipes-container h4 {
+    display: inline-block;
     background-color: rgb(240, 240, 240);
     border: 2px solid lightgray;
     border-radius: 3px;
     padding: 3px;
 }
 
-#recipes-container h1 {
+.recipes-container h1 {
     font-family: "Amatic SC", sans-serif;
     font-weight: 600;
     color: rgb(59, 122, 204);
     margin-top: 20px;
 }
 
-#recipes-container p {
+.recipes-container p {
     display: none;
 }
 
@@ -152,36 +162,36 @@ footer img {
 }
 
 @media screen and (min-width: 750px) {
-    #search-form, header hr, #recipes-container {
+    #search-form, header hr, .recipes-container {
         width: 80%;
     }
     .search-container {
         width: 100%;
     }
-    #recipes-container {
+    .recipes-container {
         flex-direction: row;
         gap: 25px;
     }
-    #recipes-container img {
+    .recipes-container img {
         width: 45%;
     }
-    #recipes-container div {
+    .recipes-container > div {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
         flex-grow: 1;
     }
-    #recipes-container h4 {
+    .recipes-container h4 {
         font-size: 2vw;
     }
-    #recipes-container h1 {
+    .recipes-container h1 {
         font-size: 2.7vw;
     }
-    #recipes-container p {
+    .recipes-container p {
         display: unset;
     }
-    #recipes-container span, #recipes-container p {
+    .recipes-container span, .recipes-container p {
         font-size: 1.4vw;
     }
     footer {
