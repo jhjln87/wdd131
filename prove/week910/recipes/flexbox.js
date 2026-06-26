@@ -1,9 +1,11 @@
+import { recipesList } from './recipes.js';
+
 let recipesImage = document.getElementById("recipes-image");
 let recipesType = document.getElementById("recipes-type");
 let recipesTitle = document.getElementById("recipes-title");
 let recipesDescription = document.getElementById("recipes-description");
 
-recipesImage.src = "apple-crisp.webp";
+recipesImage.src = "images/apple-crisp.webp";
 recipesImage.alt = "Apple crisp pie";
 recipesType.innerHTML = `dessert`;
 recipesTitle.innerHTML = `Apple Crisp`;
