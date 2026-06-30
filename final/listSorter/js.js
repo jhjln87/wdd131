@@ -50,7 +50,21 @@ let people = [
 ]
 
 let listContainer = document.querySelector('main');
-let sortBy = 'height_in';
+let sortBy;
+let addFormButton = document.getElementById('addButton');
+let sortByButton = document.getElementById('sortButton');
+let addForm = document.getElementById('newPersonForm');
+let sortForm = document.getElementById('sortByForm');
+let select = sortForm.querySelector('#sortRadioContainer');
+
+addFormButton.addEventListener('click', () => {
+    addForm.classList.toggle('hide');
+    sortForm.classList.add('hide');
+});
+sortByButton.addEventListener('click', () => {
+    sortForm.classList.toggle('hide');
+    addForm.classList.add('hide');
+});
 
 
 function findMin(method) {
@@ -98,4 +112,45 @@ function render(method) {
     });
 }
 
-render(sortBy);
+
+select.addEventListener('change', (item) => {
+    sortBy = item.target.value
+    render(sortBy); 
+});
+
+sortForm.addEventListener('submit', (event) => {
+    event.preventDefault(); 
+    let selected = sortForm.querySelector('input[name="sortBy"]:checked');
+    if (selected) {
+        sortBy = selected.value;
+        render(sortBy);
+    }
+});
+
+addForm.addEventListener('submit', (event) => {
+    const nameInput = document.getElementById('name');
+    const ageInput = document.getElementById('age');
+    const heightInput = document.getElementById('height');
+    const genderInput = document.querySelector('input[name="gender"]:checked');
+    
+    let newPerson = {
+        name: nameInput.value,
+        age: parseInt(ageInput.value),
+        height_in: parseInt(heightInput.value),
+        gender: genderInput.value
+    };
+    
+    people.push(newPerson);
+    render(sortBy);
+    addForm.reset();
+});
+
+
+function init() {
+    addForm.classList.add('hide');
+    sortForm.classList.add('hide');
+    sortBy = "height_in";
+    render(sortBy);
+}
+
+init();

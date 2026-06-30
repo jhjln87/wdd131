@@ -11,39 +11,54 @@
     <header>
         <img src="" alt="Splash logo for Sort Group App">
         <div id="actionContainer">
-            <button type="button">Add Person</button>
-            <button type="button">Sort List By</button>
+            <button type="button" id="addButton">Add Person</button>
+            <button type="button" id="sortButton">Sort List By</button>
         </div>
-        <div id="add">
-            <form id="newPersonForm">
-                <div class="formGroup">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="John" required>
-                </div>
-                <div class="formGroup">
-                    <label for="age">Age</label>
-                    <input type="number" id="age" name="age" placeholder="23" required>
-                </div>
-                <div class="formGroup">
-                    <label for="height">Height (inches)</label>
-                    <input type="number" id="height" name="height" placeholder="70" required>
-                </div>
-                <fieldset class="formGroup">
-                    <legend>Gender</legend>
-                    <div class="genderContainer">
-                        <div class="radioOption">
-                            <input type="radio" id="male" name="gender" value="M" required>
-                            <label for="male">Male</label>
-                        </div>
-                        <div class="radioOption">
-                            <input type="radio" id="female" name="gender" value="F" required>
-                            <label for="female">Female</label>
-                        </div>
+        <form id="newPersonForm">
+            <div class="formGroup">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John" required>
+            </div>
+            <div class="formGroup">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="23" required>
+            </div>
+            <div class="formGroup">
+                <label for="height">Height (inches)</label>
+                <input type="number" id="height" name="height" placeholder="70" required>
+            </div>
+            <fieldset class="formGroup">
+                <legend>Gender</legend>
+                <div id="genderContainer">
+                    <div class="radioOption">
+                        <input type="radio" id="male" name="gender" value="M" required>
+                        <label for="male">Male</label>
                     </div>
-                </fieldset>
-                <button type="submit" id="submitPerson">Add to list</button>
-            </form>
-        </div>
+                    <div class="radioOption">
+                        <input type="radio" id="female" name="gender" value="F" required>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit" id="submitPerson">Add to list</button>
+        </form>
+        <form id="sortByForm">
+            <div id="sortRadioContainer">
+                <div class="radioOption">
+                    <input type="radio" id="name" name="sortBy" value="name">
+                    <label for="name">Name (Alphabetic)</label>
+                </div>
+                <div class="radioOption">
+                    <input type="radio" id="age" name="sortBy" value="age">
+                    <label for="name">Age</label>
+                </div>
+                <div class="radioOption">
+                    <input type="radio" id="height" name="sortBy" value="height_in" checked>
+                    <label for="name">Height</label>
+                </div>
+            </div>
+            <button type="submit" id="sortList">Sort list</button>
+        </form>
     </header>
     <main>
     </main>

@@ -55,7 +55,7 @@ legend {
     font-size: clamp(12px, 1.5vw, 15px);
     margin-bottom: 5px;
 }
-.genderContainer {
+#genderContainer {
     display: flex;
     gap: 15px;
     align-items: center;
@@ -66,7 +66,7 @@ legend {
     align-items: center;
     gap: 5px;
 }
-#submitPerson {
+#submitPerson, #sortList {
     grid-column: span 2;
     padding: 10px;
     background-color: white;
@@ -74,6 +74,23 @@ legend {
     cursor: pointer;
     font-size: clamp(12px, 1.5vw, 15px);
     margin-top: 10px;
+}
+
+#sortByForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#sortRadioContainer {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -107,6 +124,10 @@ span p {
     white-space: nowrap;
 }
 
+
+.hide {
+    display: none !important;
+}
 @media screen and (min-width: 750px) {
     span p {
         transform: none;
