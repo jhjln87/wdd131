@@ -138,7 +138,7 @@ function admin() {
     people.push({name:"Johnathan", age:23, height_in:72, gender:"M"});
     people.push({name:"Alex", age:20, height_in:67, gender:"M"});
     people.push({name:"Jacob", age:18, height_in:66, gender:"M"});
-    people.push({name:"Woman", age:25, height_in:64, gender:"F"});
+    people.push({name:"Child", age:11, height_in:55, gender:"F"});
 }
 
 
