@@ -1,9 +1,12 @@
 header {
-    margin: 50px;
+    margin: 0px 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 15px;
+}
+header img {
+    width: clamp(200px, 40%, 300px);
 }
 #actionContainer {
     display: flex;
@@ -122,6 +125,33 @@ span p {
     transform: rotate(90deg);
     transform-origin: center; 
     white-space: nowrap;
+}
+
+
+footer {
+    text-align: center;
+}
+footer p {
+    margin-bottom: 8px;
+}
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    text-decoration: underline;
+    color:darkblue;
+}
+footer img {
+    width: 20px;
+    margin: 0px 20px;
+}
+footer img:hover {
+    border-bottom: 1px solid black;
+}
+#up {
+    transform: translateY(-4px);
 }
 
 
