@@ -10,8 +10,8 @@
 
 	<body>
 		<header>
-			<h1>[Project name] Project Plan</h1>
-			<h2>FirstName LastName</h2>
+			<h1>SortGroup Project Plan</h1>
+			<h2>John Wendt</h2>
 			<h2>WDD 131</h2>
 			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
 		</header>
@@ -20,35 +20,27 @@
 			<hr />
 			<h2>Overview</h2>
 			<h3>Purpose</h3>
-			<p>[Your purpose here]</p>
+			<p>Help in organization within small or large groups, will sort by name, age, and height, for various activities. Will also help visualize the sorting.</p>
 			<!-- change this -->
 
 			<h3>Audience</h3>
-			<p>[Your audience here]</p>
+			<p>Those who love organization. Those who love visualization. Why not do both?</p>
 			<!-- change this -->
 
 			<h3>Dynamic elements</h3>
-			<p>[Describe dynamic elements provided by Javascript here]</p>
+			<p>Visualization of the list, adding a person to the list, sorting of the list based on different parts of the object.</p>
 			<!-- change this -->
 
 			<hr />
 			<h2>Branding</h2>
 			<h3>Website Logo</h3>
 			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
-			<img src="#" alt="Logo image" />
+			<img src="../images/splashLogo.webp" alt="Logo image" />
 			<hr />
 			<h2>Style Guide</h2>
 
 			<h3>Color Palette</h3>
 			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
-
-			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
-			Palette URL:
-			<a
-				href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c"
-				target="_blank"
-				>https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c</a
-			>
 
 			<table class="colors">
 				<tbody>
@@ -60,10 +52,10 @@
 					</tr>
 					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
 					<tr>
-						<td class="primary">[#396E94]</td>
-						<td class="secondary">[#E7C24F]</td>
-						<td class="accent1">[#A43312]</td>
-						<td class="accent2"></td>
+						<td class="primary">[#000000]</td>
+						<td class="secondary"></td>
+						<td class="accent1">[#C6E2FF]</td>
+						<td class="accent2">[#FFB6C1]</td>
 					</tr>
 				</tbody>
 			</table>
@@ -73,34 +65,25 @@
 			<h3>Pseudocode for your project</h3>
 
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				mollit anim id est laborum.
+				Initialize list, and sortBy variable.<br>
+                Define all the necessary DOM elements.<br>
+                Buttons to open the forms.<br>
+                Find min and max for the visualizer.<br>
+                Template for individual lines of the visualizer.<br>
+                Visualizer that goes through the list, depending on which dot index of each object.<br>
+                Event listener to visualize the list based on which sortBy is selected.<br>
+                Sort the list based on letter or number. A function that defines how to sort the list.<br>
+                Event listener to sort the lister after sortBy is submitted.<br>
+                Event listener to add a new person object to the list.
+                Initializer function.
 			</p>
 
 			<h3>Wireframes</h3>
-			<p>
-				Create wireframes for your project page(s). One for each page and list them
-				here. 
-			</p>
-
 			<h3>Landing page</h3>
 			<p>
-				[Any additional details about home that the wireframe does not make
-				clear]
+				Forms will be hidden upon opening the page, and will show after their button is pressed. List will be able to be sorted upon request.
 			</p>
-			<img src="#" alt="home page wireframe" />
-
-			<h3>[Page 2 if needed]</h3>
-			<p>
-				[Any additional details about page 2 that the wireframe does not make
-				clear]
-			</p>
-			<img src="#" alt="page 2 wireframe" />
+			<img src="Untitled drawing.jpg" alt="home page wireframe" id="tooBig">
 		</main>
 	</body>
 </html>
