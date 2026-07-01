@@ -25,7 +25,6 @@ header img {
     cursor: pointer;
 }
 
-
 #newPersonForm { 
     width: 90%;
     max-width: 600px;
@@ -96,7 +95,6 @@ legend {
     margin: 0 auto;
 }
 
-
 main {
     border: 1px solid black;
     border-radius: 10px;
@@ -107,7 +105,20 @@ main {
     gap: 15px;
     align-items: flex-end;
 }
-span {
+
+/* Accessibility Structure Reset for Charts */
+.chart-list {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chart-bar {
     position: relative;
     flex: 1;
     border-radius: 10px;
@@ -116,7 +127,7 @@ span {
     flex-direction: column;
     justify-content: flex-end;
 }
-span p {
+.chart-bar p {
     position: absolute;
     bottom: 40px;
     left: 0;
@@ -126,7 +137,6 @@ span p {
     transform-origin: center; 
     white-space: nowrap;
 }
-
 
 footer {
     text-align: center;
@@ -154,15 +164,27 @@ footer img:hover {
     transform: translateY(-4px);
 }
 
-
 .itemAttribute {
     display: none;
 }
 .hide {
     display: none !important;
 }
+
+/* Screen Reader Text Only utility class */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 @media screen and (min-width: 750px) {
-    span p {
+    .chart-bar p {
         transform: none;
         bottom: 0;
         margin-bottom: 20px;
