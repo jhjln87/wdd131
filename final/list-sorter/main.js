@@ -39,6 +39,12 @@ function findMax(method) {
 
 function template(person, method, min, max) {
     let retrieve = person[method];
+    let unit;
+    if (method == "age") {
+        unit = "years old"
+    } else {
+        unit = "inches tall"
+    }
     let color;
     if (person.gender == "M") {
         color = "#C6E2FF";
@@ -56,7 +62,7 @@ function template(person, method, min, max) {
             } else {
                 percentage = ((retrieve - min) / (max - min)) * 75 + 25;
             }
-            return `<span style="height:${percentage}%; background-color:${color}"><p>${person.name}</p></span>`;
+            return `<span style="height:${percentage}%; background-color:${color}"><p>${person.name}<br><span class="itemAttribute">${retrieve} ${unit}</span></p></span>`;
             break;
     }
 }
